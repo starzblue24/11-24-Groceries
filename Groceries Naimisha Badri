@@ -1,0 +1,19 @@
+// main program to run the GroceryList
+public class Groceries
+{
+  public static void main(String[] args)
+  {
+    GroceryList list= new GroceryList();
+    GroceryItem a=new GroceryItem(" Oreos", 3, 2.5);
+    GroceryItem b=new GroceryItem(" Goldfish Crackers", 2, 1.75);
+    GroceryItem c=new GroceryItem(" Apple", 8, 0.23);
+    GroceryItem d=new GroceryItem(" Fruit Loops", 2, 4.32);
+    GroceryItem e=new GroceryItem(" Pop Tarts", 4, 3.67);
+    list.add(a);
+    list.add(b);
+    list.add(c);
+    list.add(d);
+    list.add(e);
+    System.out.println(list.toString());
+  }
+}
