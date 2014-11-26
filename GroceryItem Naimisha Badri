@@ -1,0 +1,27 @@
+// class to represent a grocery item
+public class GroceryItem 
+{
+  String name;
+  int quantity;
+  double pricePerUnit;
+  public GroceryItem(String name2, int quantity2, double pricePerUnit2)
+  {
+    name=name2;
+    quantity=quantity2;
+    pricePerUnit=pricePerUnit2;
+  }
+  public double getCost()
+  {
+    double getCost=quantity*pricePerUnit;
+    return getCost;
+  }
+  public void setQuantity(int quantity3)
+  {
+    quantity=quantity3;
+  }
+  public String toString()
+  {
+   String k=quantity+name+" @ $"+pricePerUnit+" = $"+getCost();
+     return k;
+  }
+ }
